@@ -1,9 +1,9 @@
-A, B, C = 1, 2, 10
+A, B, C = gets.chomp.split().map(&:to_i)
 
 sum_coin = 0
 time = 0
 
-while sum_coin <= C
+while sum_coin < C
   time += 1
   sum_coin += A
   if time % 7 == 0
